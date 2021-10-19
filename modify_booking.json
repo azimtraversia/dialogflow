@@ -1,0 +1,174 @@
+{
+  "id": "4bc3826b-430e-41f2-9393-0a14d0d776e5",
+  "name": "modify_booking",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "modify"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "refno",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Please provide Cart Id/Reference No."
+          ],
+          "value": "$refno",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "plastname",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Please Provide Passenger Last Name"
+          ],
+          "value": "$plastname",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Thanks, Our travel Counsellors will assist you shortly."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "3",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "0d12ea21-f2d2-417b-a091-6c8073bd0d77",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "modify",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ff0b6ff4-db25-4e1a-8a49-32ed3868450b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my ref no ",
+          "userDefined": false
+        },
+        {
+          "text": "A1255W87",
+          "userDefined": true,
+          "alias": "refno",
+          "meta": "@sys.any"
+        }
+      ],
+      "count": 0,
+      "id": "113f7421-eb4a-4a9f-ae3a-7360fc5033d0",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my last name ",
+          "userDefined": false
+        },
+        {
+          "text": "karan",
+          "userDefined": true,
+          "alias": "plastname",
+          "meta": "@sys.any"
+        }
+      ],
+      "count": 0,
+      "id": "56bea292-7462-44e8-88de-574c7b604ee8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "provide Passenger ",
+          "userDefined": false
+        },
+        {
+          "text": "last name",
+          "userDefined": true,
+          "alias": "plastname",
+          "meta": "@sys.any"
+        }
+      ],
+      "count": 0,
+      "id": "0ab2ca79-aa91-4ef3-b252-b77d32bae3cb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "please provide ",
+          "userDefined": false
+        },
+        {
+          "text": "card id",
+          "userDefined": true,
+          "alias": "refno",
+          "meta": "@sys.any"
+        }
+      ],
+      "count": 0,
+      "id": "389caff2-6e06-4754-8abb-5e38c28b4eba",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
