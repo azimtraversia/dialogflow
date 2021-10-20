@@ -1,0 +1,99 @@
+{
+  "id": "4d6b8eef-f3eb-40b6-9508-8c42aab531c7",
+  "name": "bus2",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "para"
+  ],
+  "contexts": [
+    "para"
+  ],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "bus2"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "Bus",
+          "name": "type2",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$type2",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Thanks, Our travel Counsellors will assist you shortly."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my bus booking",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "0360fad7-4aaf-4c95-8435-6815839af23c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "bus",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "665d2931-0bf5-4c6a-a490-3dce4af5a4ed",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "bus2",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "f2c4be30-e9da-4091-9952-74c36287c777",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

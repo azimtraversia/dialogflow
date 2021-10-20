@@ -1,0 +1,241 @@
+{
+  "id": "3a2721f5-2103-4d01-bd0f-96c3c60bf1e3",
+  "name": "4-step-event-visa",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "visa"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "para",
+          "lifespan": 3
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "email",
+          "dataType": "@sys.email",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Please provide your registered email id"
+          ],
+          "value": "$email",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "phonenumber",
+          "dataType": "@sys.phone-number",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Please provide your 10 digit mobile number"
+          ],
+          "value": "$phonenumber",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "Visa",
+          "name": "type",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$type",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Your details here,\nEmail : $email\nMobile: $phonenumber\n\nOkay, Noted your Query. Please let me know if you need anything else from our side."
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "options": [
+                    {
+                      "event": "flight2",
+                      "text": "FLIGHT BOOKING"
+                    },
+                    {
+                      "event": "hotel2",
+                      "text": "HOTEL BOOKING"
+                    },
+                    {
+                      "event": "bus2",
+                      "text": "BUS"
+                    },
+                    {
+                      "event": "train2",
+                      "text": "TRAIN"
+                    },
+                    {
+                      "event": "forex2",
+                      "text": "FOREX"
+                    },
+                    {
+                      "event": "car2",
+                      "text": "CAR"
+                    },
+                    {
+                      "text": "NO THANKS",
+                      "event": "nothanks"
+                    }
+                  ],
+                  "type": "chips"
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this is my email id  ",
+          "userDefined": false
+        },
+        {
+          "text": "aali.234@gmail.com",
+          "userDefined": true,
+          "alias": "email",
+          "meta": "@sys.email"
+        }
+      ],
+      "count": 0,
+      "id": "343901c0-c534-49ff-83fd-badb8e332139",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my email id ",
+          "userDefined": false
+        },
+        {
+          "text": "testing@gmail.com",
+          "userDefined": true,
+          "alias": "email",
+          "meta": "@sys.email"
+        }
+      ],
+      "count": 0,
+      "id": "6a6dd8c0-8f16-4ea3-a231-298532c19f32",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my number ",
+          "userDefined": false
+        },
+        {
+          "text": "6589587845",
+          "userDefined": true,
+          "alias": "phonenumber",
+          "meta": "@sys.phone-number"
+        }
+      ],
+      "count": 0,
+      "id": "4fae489b-906a-4e60-8819-bc15cb383240",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my mobile number ",
+          "userDefined": false
+        },
+        {
+          "text": "985457895",
+          "userDefined": true,
+          "alias": "phonenumber",
+          "meta": "@sys.phone-number"
+        }
+      ],
+      "count": 0,
+      "id": "a29be6e2-28fb-41a6-bb5b-93d7d2d20114",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my ",
+          "userDefined": false
+        },
+        {
+          "text": "visa",
+          "userDefined": true,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "fc7c783f-948a-4fee-bda0-cb4f67b4adda",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "VISA",
+          "userDefined": true,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "34da4965-6adf-4ce7-9160-fee44d09d3d4",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

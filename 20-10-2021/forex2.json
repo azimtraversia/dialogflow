@@ -1,0 +1,105 @@
+{
+  "id": "e29c6c30-cbd0-4764-9670-3156ff9f3634",
+  "name": "forex2",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "para"
+  ],
+  "contexts": [
+    "para"
+  ],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "forex2"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "Forex",
+          "name": "type2",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$type2",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Thanks, Our travel Counsellors will assist you shortly."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my forex booking",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4944dbd4-149b-42e9-825b-2bb4d248c8c9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "forex",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "16482f15-db6c-4d12-82af-c75afbd4ba49",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "forex",
+          "userDefined": false
+        },
+        {
+          "text": "2",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 1,
+      "id": "f72a6aeb-072a-43bf-acdd-c6eae08e536d",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

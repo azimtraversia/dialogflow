@@ -1,0 +1,105 @@
+{
+  "id": "444369d6-114c-4421-b04c-7f433d0bc6aa",
+  "name": "train2",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "para"
+  ],
+  "contexts": [
+    "para"
+  ],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "train2"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "Train",
+          "name": "type2",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$type2",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Thanks, Our travel Counsellors will assist you shortly."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my train book",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6466b57b-4c5c-4602-83c9-bf7be51e0637",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "train",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3d3c1925-1450-4022-ad52-e4bf4d47752c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "train",
+          "userDefined": false
+        },
+        {
+          "text": "2",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "e7d3a0fa-406b-4ae4-bb0d-4cf3e4538774",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

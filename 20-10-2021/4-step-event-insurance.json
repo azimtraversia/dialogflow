@@ -1,0 +1,257 @@
+{
+  "id": "cbb96123-4373-4394-89b0-1d2efbf5d019",
+  "name": "4-step-event-insurance",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "insurance"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "para",
+          "lifespan": 3
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "email",
+          "dataType": "@sys.email",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Please provide your registered email id"
+          ],
+          "value": "$email",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "phonenumber",
+          "dataType": "@sys.phone-number",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Please provide your 10 digit mobile number"
+          ],
+          "value": "$phonenumber",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "Insurance",
+          "name": "type",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$type",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Your details here,\nEmail : $email\nMobile: $phonenumber\n\nOkay, Noted your Query. Please let me know if you need anything else from our side."
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "event": "flight2",
+                      "text": "FLIGHT BOOKING"
+                    },
+                    {
+                      "event": "hotel2",
+                      "text": "HOTEL BOOKING"
+                    },
+                    {
+                      "text": "BUS",
+                      "event": "bus2"
+                    },
+                    {
+                      "text": "TRAIN",
+                      "event": "train2"
+                    },
+                    {
+                      "event": "forex2",
+                      "text": "FOREX"
+                    },
+                    {
+                      "text": "CAR",
+                      "event": "car2"
+                    },
+                    {
+                      "text": "NO THANKS",
+                      "event": "nothanks"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this is my emailid ",
+          "userDefined": false
+        },
+        {
+          "text": "aali@traversia.net",
+          "userDefined": true,
+          "alias": "email",
+          "meta": "@sys.email"
+        }
+      ],
+      "count": 0,
+      "id": "dd7ad362-a8be-48cd-ab8c-bee52a80f577",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my email id ",
+          "userDefined": false
+        },
+        {
+          "text": "testing@gmail.com",
+          "userDefined": true,
+          "alias": "email",
+          "meta": "@sys.email"
+        }
+      ],
+      "count": 0,
+      "id": "78ef5080-8b8c-4d7b-98ef-6564640ff404",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "phone number ",
+          "userDefined": false
+        },
+        {
+          "text": "9854785487",
+          "userDefined": true,
+          "alias": "phonenumber",
+          "meta": "@sys.phone-number"
+        }
+      ],
+      "count": 0,
+      "id": "a90653a2-ddb4-4c34-93bd-b0f01dc8419e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this is my number  ",
+          "userDefined": false
+        },
+        {
+          "text": "9586589658",
+          "userDefined": true,
+          "alias": "phonenumber",
+          "meta": "@sys.phone-number"
+        }
+      ],
+      "count": 0,
+      "id": "5b1ba3bf-0655-459d-8194-0fad77b06435",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my mobile number ",
+          "userDefined": false
+        },
+        {
+          "text": "9856589568",
+          "userDefined": true,
+          "alias": "phonenumber",
+          "meta": "@sys.phone-number"
+        }
+      ],
+      "count": 0,
+      "id": "3e34f5cb-42c4-4b05-895a-e6e9d8a7adaf",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my ",
+          "userDefined": false
+        },
+        {
+          "text": "INSURANCE",
+          "userDefined": true,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "eccc7fc5-14c7-4af1-9623-08171462f910",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "INSURANCE",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "133e9285-bada-457e-89a1-f685478ee97c",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

@@ -1,0 +1,107 @@
+{
+  "id": "57b49ec3-07af-4f1d-89c3-32f5d9611d63",
+  "name": "4-step-for-other",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "other"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "options": [
+                    {
+                      "event": "bus",
+                      "text": "BUS BOOKING"
+                    },
+                    {
+                      "event": "train",
+                      "text": "TRAIN BOOKING"
+                    },
+                    {
+                      "event": "car",
+                      "text": "CAR"
+                    },
+                    {
+                      "event": "insurance",
+                      "text": "INSURANCE"
+                    },
+                    {
+                      "event": "visa",
+                      "text": "VISA"
+                    },
+                    {
+                      "text": "FOREX",
+                      "event": "forex"
+                    },
+                    {
+                      "event": "convother",
+                      "text": "OTHER"
+                    }
+                  ],
+                  "type": "chips"
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "4",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 1,
+      "id": "c6cf99db-777c-46b8-9ebf-2321b5e48439",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "ANY-OTHER",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "576aa50d-1564-4956-8e35-8931cf59740e",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

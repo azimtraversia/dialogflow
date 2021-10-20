@@ -1,0 +1,87 @@
+{
+  "id": "c3279d6b-b90e-4284-af59-aef65c61b545",
+  "name": "event_nothanks",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "para"
+  ],
+  "contexts": [
+    "para"
+  ],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "nothanks"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Thanks, Our travel Counsellors will assist you shortly."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "5",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "55596ad0-36a3-4844-a3e5-33d24a56f2cb",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "thanks",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "478b7d49-f8bf-4ca2-a89c-f1224936c206",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "no thanks",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "d614c76f-2cae-4a8e-b03c-a40cf0647ac6",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

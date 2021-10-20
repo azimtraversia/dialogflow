@@ -1,0 +1,315 @@
+{
+  "id": "1fa3380f-bcc4-48dd-8e92-94017f2c82a5",
+  "name": "4-step-for-Hotel",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "hotel"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "para",
+          "lifespan": 3
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "email",
+          "dataType": "@sys.email",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Please provide your registered email id."
+          ],
+          "value": "$email",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "phonenumber",
+          "dataType": "@sys.phone-number",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Please provide your 10 digit mobile number"
+          ],
+          "value": "$phonenumber",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "Hotel",
+          "name": "type",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$type",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Your details here,\nEmail : $email\nMobile: $phonenumber\n\nOkay, Noted your Query. Please let me know if you need anything else from our side."
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "options": [
+                    {
+                      "text": "FLIGHT BOOKING",
+                      "event": "flight2"
+                    },
+                    {
+                      "event": "bus2",
+                      "text": "BUS"
+                    },
+                    {
+                      "event": "train2",
+                      "text": "TRAIN"
+                    },
+                    {
+                      "event": "forex2",
+                      "text": "FOREX"
+                    },
+                    {
+                      "text": "CAR",
+                      "event": "car2"
+                    },
+                    {
+                      "event": "nothanks",
+                      "text": "5.NO THANKS"
+                    }
+                  ],
+                  "type": "chips"
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "2",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "76898db6-966d-4038-86c6-1a8d3d3612a8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "booking hotel",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "27f9aa56-7f8c-4bc2-b935-1f2db35cfae9",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hotel booking",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3f70705a-42ff-4e50-a1f9-da67bd2ed3ed",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hotel",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c79981c6-9aae-40df-bcd2-cb206d5571dd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my email ",
+          "userDefined": false
+        },
+        {
+          "text": "rohan@gmail.com",
+          "userDefined": true,
+          "alias": "email",
+          "meta": "@sys.email"
+        }
+      ],
+      "count": 0,
+      "id": "055f8457-8462-4ffa-81e7-af30952e5314",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "sohansingh@shoi.in.co",
+          "userDefined": true,
+          "alias": "email",
+          "meta": "@sys.email"
+        }
+      ],
+      "count": 0,
+      "id": "b73ff744-8c84-4561-a066-07576ce58e0d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "karan.singh@gmail.com",
+          "userDefined": true,
+          "alias": "email",
+          "meta": "@sys.email"
+        }
+      ],
+      "count": 0,
+      "id": "84c0b601-c923-426b-8120-c3038c7df0d5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this is my email id ",
+          "userDefined": false
+        },
+        {
+          "text": "testing@gmail.com",
+          "userDefined": true,
+          "alias": "email",
+          "meta": "@sys.email"
+        }
+      ],
+      "count": 0,
+      "id": "ab6a1dcb-bd66-43de-8180-0b4a60ba975f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "phone number is  ",
+          "userDefined": false
+        },
+        {
+          "text": "9856587845",
+          "userDefined": false,
+          "alias": "phonenumber",
+          "meta": "@sys.phone-number"
+        }
+      ],
+      "count": 0,
+      "id": "7faca2b0-67c8-4659-9532-e2d261ade3a5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "9856589568",
+          "userDefined": true,
+          "alias": "phonenumber",
+          "meta": "@sys.phone-number"
+        }
+      ],
+      "count": 0,
+      "id": "d7d46067-9f44-4c60-9109-bf9578d80bf2",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my contact number ",
+          "userDefined": false
+        },
+        {
+          "text": "5698568547",
+          "userDefined": true,
+          "alias": "phonenumber",
+          "meta": "@sys.phone-number"
+        }
+      ],
+      "count": 0,
+      "id": "1e6b4e8d-77f9-4cbe-bbce-88e38c4f6f20",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this is my mobile number ",
+          "userDefined": false
+        },
+        {
+          "text": "9856256589",
+          "userDefined": false,
+          "alias": "phonenumber",
+          "meta": "@sys.phone-number"
+        }
+      ],
+      "count": 0,
+      "id": "34260c95-c911-4a1e-af35-c002775fbdd7",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

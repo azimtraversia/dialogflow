@@ -1,0 +1,105 @@
+{
+  "id": "0f238d1b-cd4d-45b3-84b1-fbd13d306990",
+  "name": "car2",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "para"
+  ],
+  "contexts": [
+    "para"
+  ],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "car2"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "Car",
+          "name": "type2",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$type2",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Thanks, Our travel Counsellors will assist you shortly."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my car booking",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7bc6541c-1bf2-4975-a530-a4ff9454a89d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "car",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "eeda7fae-613d-4604-90e7-870a242c0aff",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "car",
+          "userDefined": false
+        },
+        {
+          "text": "2",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        }
+      ],
+      "count": 0,
+      "id": "77232107-e3e2-4e6e-bc7d-aaae85353fcc",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

@@ -1,0 +1,129 @@
+{
+  "id": "9114b090-8505-41db-a239-f16cb23cb628",
+  "name": "conv.Other",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "convother"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "any",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Please insert your query."
+          ],
+          "value": "$any",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "email",
+          "dataType": "@sys.email",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Please provide your registered email id."
+          ],
+          "value": "$email",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "phonenumber",
+          "dataType": "@sys.phone-number",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Please provide your 10 digit mobile number"
+          ],
+          "value": "$phonenumber",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Okay, Noted your Query. \n\nThanks and our agent will revert to you within one hour."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "other",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "9e8eb868-5e6c-423e-ac7a-a98e349749a7",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "convother",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "3a1e596c-ccdc-42c2-9263-8dca5c0a9a31",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "i want my ticket status",
+          "userDefined": true,
+          "alias": "any",
+          "meta": "@sys.any"
+        }
+      ],
+      "count": 0,
+      "id": "bcd5c111-cf64-4ba8-a129-08054d9b0495",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

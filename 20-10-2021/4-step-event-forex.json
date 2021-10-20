@@ -1,0 +1,229 @@
+{
+  "id": "62fbf027-c35a-47fb-b0c5-c74dd49d5122",
+  "name": "4-step-event-forex",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [
+    {
+      "name": "forex"
+    }
+  ],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "para",
+          "lifespan": 3
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "email",
+          "dataType": "@sys.email",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Please provide your registered email id"
+          ],
+          "value": "$email",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "phonenumber",
+          "dataType": "@sys.phone-number",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Please provide your 10 digit mobile number"
+          ],
+          "value": "$phonenumber",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "Forex",
+          "name": "type",
+          "dataType": "@sys.any",
+          "isList": false,
+          "required": false,
+          "prompts": [],
+          "value": "$type",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Your details here,\nEmail : $email\nMobile: $phonenumber\n\nOkay, Noted your Query. Please let me know if you need anything else from our side."
+          ]
+        },
+        {
+          "type": "custom_payload",
+          "condition": "",
+          "payload": {
+            "richContent": [
+              [
+                {
+                  "type": "chips",
+                  "options": [
+                    {
+                      "text": "FLIGHT BOOKING",
+                      "event": "flight2"
+                    },
+                    {
+                      "text": "HOTEL BOOKING",
+                      "event": "hotel2"
+                    },
+                    {
+                      "event": "bus2",
+                      "text": "BUS"
+                    },
+                    {
+                      "event": "train2",
+                      "text": "TRAIN"
+                    },
+                    {
+                      "event": "car2",
+                      "text": "CAR"
+                    },
+                    {
+                      "event": "nothanks",
+                      "text": "NO THANKS"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this is my number ",
+          "userDefined": false
+        },
+        {
+          "text": "9856589658",
+          "userDefined": true,
+          "alias": "phonenumber",
+          "meta": "@sys.phone-number"
+        }
+      ],
+      "count": 0,
+      "id": "1a32b2e9-227e-4afc-84b4-f00780664a75",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my number here ",
+          "userDefined": false
+        },
+        {
+          "text": "5896589658",
+          "userDefined": true,
+          "alias": "phonenumber",
+          "meta": "@sys.phone-number"
+        }
+      ],
+      "count": 0,
+      "id": "b76d5eb6-76c4-4000-976b-0333e1590562",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my email id  ",
+          "userDefined": false
+        },
+        {
+          "text": "rajeskumar@gmail.com",
+          "userDefined": true,
+          "alias": "email",
+          "meta": "@sys.email"
+        }
+      ],
+      "count": 0,
+      "id": "fce6b9a3-97e4-4306-a467-71ef0e29f404",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "this is my email id ",
+          "userDefined": false
+        },
+        {
+          "text": "karan23@gmail.com",
+          "userDefined": true,
+          "alias": "email",
+          "meta": "@sys.email"
+        }
+      ],
+      "count": 0,
+      "id": "91f4494e-81aa-4b82-bd62-aab6f1f8a101",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "my forex",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1016d0e8-7a1f-4440-98d1-b6a327f78b26",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "forex",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c9333ce6-9e8f-4a61-88dc-dac71c311394",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
